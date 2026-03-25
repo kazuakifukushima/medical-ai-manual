@@ -1,0 +1,57 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "生成AI マスターマニュアル"
+  description: "医療従事者向け ChatGPT・Claude・Gemini 実践活用ガイド"
+  favicon: favicon.ico
+
+  navbar:
+    logo: ""
+    title: "生成AI マスターマニュアル"
+    left:
+      - text: "ホーム"
+        href: index.qmd
+      - text: "ChatGPT"
+        href: chatgpt/index.qmd
+      - text: "Claude"
+        href: claude/index.qmd
+      - text: "Gemini"
+        href: gemini/index.qmd
+      - text: "ツール比較"
+        href: comparison.qmd
+      - text: "プロンプト術"
+        href: prompting.qmd
+      - text: "安全な使い方"
+        href: safety.qmd
+    right:
+      - icon: github
+        href: https://github.com
+
+  sidebar: false
+
+  page-footer:
+    left: "© 2025 Medical Intelligence Lab — 医療従事者向け生成AIマニュアル"
+    right: "駒込病院 感染症科 / 感染制御科"
+
+  open-graph: true
+
+format:
+  html:
+    theme:
+      light: [flatly, custom.scss]
+    toc: true
+    toc-depth: 3
+    toc-title: "目次"
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    code-copy: true
+    code-fold: false
+    fontsize: 1.05em
+    linestretch: 1.7
+    lang: ja
+
+execute:
+  freeze: auto

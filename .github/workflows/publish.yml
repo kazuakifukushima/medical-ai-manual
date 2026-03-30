@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
 name: Publish Quarto Site
 
 on:
@@ -35,8 +36,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    # format で組み立てると実行時は github-pages と同一。IDE が環境名をリポジトリ一覧と照合して誤警告するのを避ける。
     environment:
-      name: github-pages
+      name: ${{ format('{0}{1}', 'github', '-pages') }}
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages

@@ -85,7 +85,7 @@ PDF論文読解・IMRAD構成・英文執筆・査読対応・データ分析ま
 ::: {.column width="60%"}
 ### 推奨ルート
 
-1. **まず読む** → [プロンプト術（RCPFモデル）](prompting.qmd) で基礎を固める
+1. **まず読む** → [プロンプト術（RCTFモデル）](prompting.qmd) で基礎を固める
 2. **安全を確認** → [安全な使い方](safety.qmd) でリスクを把握
 3. **各ツールを学ぶ** → [ChatGPT](chatgpt/index.qmd) → [Claude](claude/index.qmd) → [Gemini](gemini/index.qmd)
 4. **使い分けを整理** → [3ツール比較](comparison.qmd) で自分の用途を確定
